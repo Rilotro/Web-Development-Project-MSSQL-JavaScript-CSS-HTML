@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel='icon' type='image/x-icon' href='./famine.ico'>
+        <a href="./home_page.html">
+            <button>inapoi</button>
+        </a>
+    </head>
+    <body id="mainBody">
+        <script type="text/javascript" src="./form_ang.js"></script>
+        <form id="form_ang" name="angajare" method="POST">
+            <br>
+            Pentru a fi acceptat ca profesor la programul nostru prestigios,<br> va rugam completati formularul de mai jos:<br>
+            <p>
+                Introduceti-va numele:<br>
+                <input type="text" name="Nume" class="nume" id="Nume" placeholder="Nume">
+                <input type="text" name="Prenume" class="nume" id="Prenume" placeholder="Prenume">*
+            </p>
+            <p>
+                Date de contact*:<br>
+                Va rugam sa intorduceti numarul <b>complet</b> de telefon<br>
+                <input type="text" name="NumarTel" class="contact" id="NumardeTel" placeholder="Numar de Telefon">
+                <input type="text" name="e_mail" class="cuntact" id="e_mail" placeholder="e-mail">
+            </p>
+            <p>
+                Va rugam introduceti o parola:<br>
+                <input type="text" name="Parola" class="parola" id="Parola" placeholder="Parola"><br>
+                Va rugam sa o introduceti din nou:<br>
+                <input type="text" name="REParola" class="reparola" id="REParola" placeholder="REParola"><br>
+            </p>
+            <p>
+                Unde locuiti?<br>
+                <input type="text" name="Strada" class="adresa" id="Strada" placeholder="Strada">
+                <input type="text" name="Numar" class="adresa" id="Numar" placeholder="Numar"><br><br>
+                <input type="text" name="Oras" class="adresa" id="Oras" placeholder="Oras">
+                <input type="text" name="Judet" class="adresa" id="Judet" placeholder="Judet"><br><br>
+                <input type="text" name="Tara" class="adresa" id="Tara" placeholder="Tara">
+            </p>
+            <p>
+                Oferiti-ne datele personale ale dumneavoastra:<br>
+                <input type="text" name="CNP" class="date_personale" id="CNP" placeholder="CNP">*<br><br>
+                Sex*:<br>
+                <input type="radio" name="Sex" value="M">M
+                <input type="radio" name="Sex" value="F">F
+                <input type="radio" name="Sex" value="NULL">NULL<br><br>
+                Data de Nastere<br>
+                <select class="date_personale" name="an" id="an">
+                </select>
+                <select class="date_personale" name="luna" id="luna">
+                    <option value="01">Ianuarie</option>
+                    <option value="02">Februarie</option>
+                    <option value="03">Martie</option>
+                    <option value="04">Aprilie</option>
+                    <option value="05">Mai</option>
+                    <option value="06">Iunie</option>
+                    <option value="07">Iulie</option>
+                    <option value="08">August</option>
+                    <option value="09">Septembrie</option>
+                    <option value="10">Octombrie</option>
+                    <option value="11">Noiembrie</option>
+                    <option value="12">Decembrie</option>
+                </select>
+                <select class="date_personale" name="zi" id="zi">
+                </select>
+            </p>
+            <p>
+                Ce materie/materii preferati sa predati?<br>
+                <input type="checkbox" name="materieM" value="Matematica">Matematica<br>
+                <input type="checkbox" name="materieF" value="Fizica">Fizica<br>
+                <input type="checkbox" name="materieC" value="Chimie">Chimie<br>
+                <input type="checkbox" name="materieI" value="Informatica">Informatica<br>
+                <input type="checkbox" name="materieA" value="Alchimie">Alchimie<br>
+            </p>
+            <p>
+                <input type="button" name="submit" value="Click" onclick="submitTest(this.form)">
+            </p>
+        </form>
+        <p id="notes">
+            Campurile care au '*' sunt optionale
+        </p>
+    </body>
